@@ -68,6 +68,8 @@ void testDBNode_Score(){
     DBNode * node=new DBNode(100,testStr);
     node->setScore(50);
     assert(node->getScore()==50);
+    delete node;
+    node=nullptr;
 }
 
 
